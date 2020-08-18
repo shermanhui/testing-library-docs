@@ -110,7 +110,7 @@ screen.debug(screen.getAllByText('multi-test'))
 
 > **NOTE**
 > 
-> These queries are the base queries and require you pass a `container` as
+> These queries are the base queries and require you to pass a `container` as
 > the first argument. Most framework-implementations of Testing Library provide
 > a pre-bound version of these queries when you render your components with them
 > which means you do not have to provide a container. In addition, if you just
@@ -227,7 +227,7 @@ const inputNode = screen.getByLabelText('Username', { selector: 'input' })
 > **Note** 
 >
 > `getByLabelText` will not work in the case where a `for` attr on a `<label>` 
-> element matches and `id` field on a non-form element.
+> element matches an `id` field on a non-form element.
 
 
 ```js
