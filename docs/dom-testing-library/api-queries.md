@@ -38,7 +38,7 @@ more than one element is found after a default timeout of `1000`ms. If you need
 to find more than one element, then use `findAllBy`.
 
 > **Note**
->
+> 
 > this is a simple combination of `getBy*` queries and
 > [`waitFor`](/docs/api-async#waitfor). The `findBy*` queries accept the
 > `waitFor` options as the last argument. (i.e.
@@ -108,9 +108,9 @@ screen.debug(screen.getAllByText('multi-test'))
 
 ## Queries
 
-> **Note**
->
-> These queries are the base queries and require you to pass a `container` as
+> **NOTE**
+> 
+> These queries are the base queries and require you pass a `container` as
 > the first argument. Most framework-implementations of Testing Library provide
 > a pre-bound version of these queries when you render your components with them
 > which means you do not have to provide a container. In addition, if you just
@@ -224,10 +224,11 @@ If it is important that you query an actual `<label>` element you can provide a
 const inputNode = screen.getByLabelText('Username', { selector: 'input' })
 ```
 
-> **Note**
+> **Note** 
 >
-> `getByLabelText` will not work in the case where a `for` attribute on a
-> `<label>` element matches an `id` attribute on a non-form element.
+> `getByLabelText` will not work in the case where a `for` attr on a `<label>` 
+> element matches and `id` field on a non-form element.
+
 
 ```js
 // This case is not valid
@@ -732,10 +733,10 @@ you can get the "Sugar" option by calling
 state and which elements can have this state see
 [ARIA `aria-checked`](https://www.w3.org/TR/wai-aria-1.2/#aria-checked).
 
-> **Note**
->
-> Checkboxes have a "mixed" state, which is considered neither checked nor
-> unchecked (details [here](https://www.w3.org/TR/html-aam-1.0/#details-id-56)).
+> **Note** 
+> Checkboxes have a "mixed" state, which is considered neither checked
+> nor unchecked (details
+> [here](https://www.w3.org/TR/html-aam-1.0/#details-id-56)).
 
 #### `pressed`
 
@@ -953,9 +954,9 @@ expected to return a normalized version of that string.
 
 > **Note**
 >
-> Specifying a value for `normalizer` _replaces_ the built-in normalization, but
-> you can call `getDefaultNormalizer` to obtain a built-in normalizer, either to
-> adjust that normalization or to call it from your own normalizer.
+> Specifying a value for `normalizer` _replaces_ the built-in normalization,
+> but you can call `getDefaultNormalizer` to obtain a built-in normalizer, either
+> to adjust that normalization or to call it from your own normalizer.
 
 `getDefaultNormalizer` takes an options object which allows the selection of
 behaviour:
